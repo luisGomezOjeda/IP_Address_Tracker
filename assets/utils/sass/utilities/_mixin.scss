@@ -1,0 +1,30 @@
+@mixin flex($d,$j,$a){
+ display: flex;
+ flex-direction: $d;
+ justify-content: $j;
+ align-items: $a;
+}
+
+@mixin size($w,$h,$br){
+ width: $w;
+ height: $h;
+ border-radius: $br;
+};
+
+@mixin font($s,$w,$lh,$c){
+ font-size: $s;
+ font-weight: $w;
+ line-height:$lh;
+ color: $c;
+}
+
+@mixin media-down($width){
+ @media (max-width:map-get($map: $breakpoin,$key:$width)){
+   @content;
+ }
+}
+@mixin media-query($width){
+ @media (max-width:$width){
+   @content;
+ }
+}

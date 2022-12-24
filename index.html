@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- family font-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+ 
+ <!--  map leatfletJs-->
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+ integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+ crossorigin=""/>
+
+ <!-- style -->
+ <link rel="stylesheet" href="./assets/utils/css/index.css">
+
+ <title>Document</title>
+</head>
+<body>
+ <main>
+  <section class="section-info">
+
+    <h1>IP Address Tracker</h1>
+      <div class="address-input">
+    <input type="number" placeholder="Search for iny IP address or domain">
+    <button>
+      <img src="./assets/images/icon-arrow.svg" alt="">
+    </button>
+   </div>
+
+    <section class="address-info">
+
+      <ul class="info-IPaddress">
+       <h4>IP ADDRESS</h4>
+       <li>
+        <p>21.5656489</p>
+       </li>
+      </ul>
+
+      <ul class="info-location">
+       <h4>LOCATION</h4>
+       <li>
+        <p>san antionio oeste</p>
+       </li>
+      </ul>
+
+      <ul class="info-timeZone">
+       <h4>TIME ZONE</h4>
+       <li>
+        <p>UTC-05:00</p>
+       </li>
+      </ul>
+
+      <ul class="info-ISP">
+       <h4>ISP</h4>
+       <li>
+        <p>spaceX starlink</p>
+      </li>
+    </ul>
+  </section> 
+</section>
+  <section class="section-map">
+    <div id="map"></div>
+  </section>
+
+ </main>
+  
+ <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+ integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+  crossorigin=""></script>
+  <script src ="./assets/scripts/index.js" type="module"></script>
+  
+</body>
+</html>

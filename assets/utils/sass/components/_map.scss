@@ -1,0 +1,21 @@
+.section-map{
+ width: 100%;
+ height: 100%;
+ grid-area: 2;
+
+ @include media-query(847px){
+  min-height: 600px;
+ }
+
+ #map{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+ }
+}
+
+.leaflet-control{
+ @include media-query(847px){
+   display: none;
+ }
+}

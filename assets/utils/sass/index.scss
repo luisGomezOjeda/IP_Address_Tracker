@@ -1,0 +1,9 @@
+@import "base/base","base/type";
+
+@import "utilities/functions","utilities/mixin","utilities/variables";
+
+@import "view/main";
+
+@import "layout/grid";
+
+@import "components/bg_section_info.scss","components/buttons","components/map","components/info_location";

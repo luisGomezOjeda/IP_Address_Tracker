@@ -1,0 +1,24 @@
+.address-input{
+ min-width: 450px;
+ min-height: 50px;
+
+ @include media-query(847px){
+  min-width: 300px;
+ }
+ 
+ input{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px ;
+  padding-left: 20px;
+
+  @include font(1.4rem,500,0,color("DarkGray"));
+  
+ }
+ button{
+  width: 100%;
+  height: 100%;
+  border-radius:  0 10px 10px 0 ;
+  background-color: color("VeryDarkGray");
+ }
+}

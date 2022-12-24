@@ -1,0 +1,31 @@
+main{
+ width: 100%;
+ height: 100vh;
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: 35% 65%;
+ 
+ @include media-query(847px){
+  grid-template-rows: auto;
+ }
+}
+
+.section-info{
+ @include flex(column,space-between,center);
+}
+
+.address-info{
+ @include flex(row,space-between,center);
+ @include media-query(847px){
+  @include flex(column,space-evenly,center);
+ }
+}
+
+.address-input{
+ display: grid;
+ grid-template-columns: 90% 10%;
+ 
+ @include media-query(847px){
+  grid-template-columns: 85% 15%;
+ }
+}

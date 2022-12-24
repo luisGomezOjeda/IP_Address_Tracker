@@ -1,0 +1,17 @@
+.section-info{
+ height: 100%;
+ grid-row: 1;
+ background : {
+  image:url('../../images/pattern-bg.png');
+  size: cover;
+  repeat: no-repeat;
+ }
+
+ @include media-query(847px){
+  max-height: 250px;
+ }
+
+ h1{
+  @include font(2.5rem,bold,10rem,color("while"));
+ }
+}

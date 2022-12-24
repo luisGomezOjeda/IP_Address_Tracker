@@ -1,0 +1,66 @@
+.address-info{
+ z-index: 2;
+ min-width: map-get($map: $breakpoin, $key: "xxl");
+ min-height: 190px;
+ margin-top: 85px;
+ padding: 50px;
+ border-radius: 10px;
+ background-color: color("while");
+ 
+ @include media-down("xxl"){
+  min-width: map-get($map: $breakpoin, $key: "ms");
+  margin-top: 50px;
+ }
+ 
+ @include media-query(847px){
+  margin-top: 20px;
+  min-height: 350px;
+  min-width: 350px;
+  padding: 10px 0;
+ }
+ 
+ @include media-down("ms"){
+  min-width: 200px;
+  min-height: 300px;
+ }
+
+
+ ul:nth-child(1),ul:nth-child(2),ul:nth-child(3){
+  border-right: solid 0.5px color("DarkGray");
+
+  @include media-query(847px){
+    border: none;
+  }
+ }
+ ul{
+  padding-left: 20px; 
+  width: 100%;
+  height: 100%;
+  @include flex(column,start,start);
+  
+  @include media-query(847px){
+   @include flex(column,space-evenly,center);
+   padding: 0;
+  }
+
+  h4{
+   @include font(1.4rem,500,3.5rem,color("DarkGray"));
+   letter-spacing:2px;
+   
+   @include media-down("ms"){
+    @include font(1rem,300,2rem,color("VeryDarkGray"));
+    letter-spacing:3px;
+   }
+  } 
+  li p{
+   @include font(3rem,700,3rem,color("VeryDarkGray"));
+   
+   @include media-down("xxl"){
+    @include font(2rem,700,2.5rem,color("VeryDarkGray"));
+   }
+   @include media-down("ms"){
+    @include font(1.6rem,700,2.5rem,color("VeryDarkGray"));
+   }
+  }
+ }
+}

@@ -29,6 +29,9 @@ Your users should be able to:
 
 For the mapping API, we recommend using [LeafletJS](https://leafletjs.com/). It's free to use and doesn't require an API Key. If you decide to use another API, like Google Maps or Mapbox, be sure to secure your API Key. Here are guides for both Google Maps and Mapbox, be sure to read through them thoroughly:
 
+
+
+
 - [API Key best practices from Google Developers](https://developers.google.com/maps/api-key-best-practices)
 - [How to use Mapbox securely](https://docs.mapbox.com/help/troubleshooting/how-to-use-mapbox-securely/)
 
