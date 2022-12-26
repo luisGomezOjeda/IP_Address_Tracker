@@ -1,17 +1,3 @@
-export function getMap(){
-//  let map = L.map('map').setView([-40.7343896,-64.941539],19);
-
-//     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//         maxZoom: 19,
-//         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-//     }).addTo(map);
-
-//     // let polygon = L.polygon([
-//     //     [51.509, -0.08],
-//     //     [51.503, -0.06],
-//     //     [51.51, -0.047]
-//     // ]).addTo(map);
-
 
     let map = L.map('map').setView([51.505, -0.09], 13);
 
@@ -29,6 +15,3 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     });
     
     L.marker([51.5, -0.09], {icon: myIcon}).addTo(map);
-
-
-}
