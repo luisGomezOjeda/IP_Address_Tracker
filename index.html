@@ -24,40 +24,38 @@
   <section class="section-info">
 
     <h1>IP Address Tracker</h1>
-      <div class="address-input">
-    <input type="number" placeholder="Search for iny IP address or domain">
-    <button>
-      <img src="./assets/images/icon-arrow.svg" alt="">
-    </button>
-   </div>
+      <form class="address-input">
+    <input type="text" placeholder="Search for iny IP address or domain" id="input" pattern="^((25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(25[0-5]|2[0-4]\d|[01]?\d\d?)$">
+      <input type="submit" value="">
+   </form>
 
     <section class="address-info">
 
       <ul class="info-IPaddress">
        <h4>IP ADDRESS</h4>
        <li>
-        <p>21.5656489</p>
+        <p></p>
        </li>
       </ul>
 
       <ul class="info-location">
        <h4>LOCATION</h4>
        <li>
-        <p>san antionio oeste</p>
+        <p></p>
        </li>
       </ul>
 
       <ul class="info-timeZone">
        <h4>TIME ZONE</h4>
        <li>
-        <p>UTC-05:00</p>
+        <p></p>
        </li>
       </ul>
 
       <ul class="info-ISP">
        <h4>ISP</h4>
        <li>
-        <p>spaceX starlink</p>
+        <p></p>
       </li>
     </ul>
   </section> 
@@ -67,11 +65,12 @@
   </section>
 
  </main>
-  
- 
+
  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
  integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
  crossorigin=""></script>
+
+
 
   <script src ="./assets/scripts/index.js" type="module" defer = "true"></script>
   

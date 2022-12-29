@@ -1,10 +1,9 @@
-export function getMap(){
-
-
-    let map = L.map('map').setView([51.505, -0.09], 13);
+export function getMap(array){
+ let map = L.map('map').setView(array,19);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
     let myIcon = L.icon({
@@ -16,5 +15,13 @@ export function getMap(){
         shadowAnchor: [0, 0]
     });
     
-    L.marker([51.5, -0.09], {icon: myIcon}).addTo(map);
+
+    L.marker(array).addTo(map)
+    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+    .openPopup();
+
+
+    L.marker((array), {icon: myIcon}).addTo(map);
+
+
 }
