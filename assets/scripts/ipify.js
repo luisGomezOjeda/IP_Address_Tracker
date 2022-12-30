@@ -12,13 +12,7 @@ const d = document;
 export async function getPositionIP(fun,addressIp = undefined){
  if(addressIp === undefined){
   try{
-  const res = await fetch("https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_rtamG2Krj8ByKrI1xbknbTewDYf8F&ipAddress=8.8.8.8",{
-    method: "GET",
-    headers: {
-      // "apiKey" : "at_rtamG2Krj8ByKrI1xbknbTewDYf8F",
-      // "ipAddress" : "at_rtamG2Krj8ByKrI1xbknbTewDYf8F",
-    }
-  })
+  const res = await fetch("https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_rtamG2Krj8ByKrI1xbknbTewDYf8F&ipAddress=8.8.8.8");
   const json = await res.json();
   console.log(json);
   
@@ -36,14 +30,11 @@ export async function getPositionIP(fun,addressIp = undefined){
  }else{
   try{
    const res = await fetch(`https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_rtamG2Krj8ByKrI1xbknbTewDYf8F&ipAddress=192.168.0.102`,{
-    method: 'GET',
-    headers: {
-     "apiKey" : "at_rtamG2Krj8ByKrI1xbknbTewDYf8F",
-    }
+    "apiKey" : "f8fe272ae1de0d94f5efb3b66dfef3bb"
    });
   const json = await res.json();
 
-  console.log(json);
+  alert(json);
   
   
  }catch(err){

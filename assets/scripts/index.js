@@ -2,7 +2,6 @@
 // clave IPfy : at_rtamG2Krj8ByKrI1xbknbTewDYf8F
 
 import {getMap} from "./Map.js";
-import {getGeolocation} from "./Geolocation.js";
 import {getPositionIP} from "./ipify.js";
 
 document.addEventListener("DOMContentLoaded",(e)=>{
