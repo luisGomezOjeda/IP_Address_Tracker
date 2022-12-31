@@ -5,11 +5,12 @@ import {getMap} from "./Map.js";
 import {getPositionIP} from "./ipify.js";
 
 document.addEventListener("DOMContentLoaded",(e)=>{
-    getPositionIP(getMap);
+    // getPositionIP(getMap);
+    getMap([-40.7343896,-64.941539]);
 });
 
-document.addEventListener("submit",(e)=>{
-    e.preventDefault();
-    const address_input = document.querySelector(".address-input input[type=text]");
-    getPositionIP(getMap,address_input.value);
-})
+// document.addEventListener("submit",(e)=>{
+//     e.preventDefault();
+//     const address_input = document.querySelector(".address-input input[type=text]");
+//     getPositionIP(getMap,address_input.value);
+// })
