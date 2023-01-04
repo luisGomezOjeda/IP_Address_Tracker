@@ -4,7 +4,7 @@
 // f8fe272ae1de0d94f5efb3b66dfef3bb
 
 
-// 168.196.24.62
+// 
 
 const d = document;
 
@@ -25,21 +25,6 @@ export async function getPositionIP(fun,addressIp = undefined){
 
   }
   catch(err){
-   console.log(err);
-  }
- }else{
-  try{
-   const res = await fetch(`https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_rtamG2Krj8ByKrI1xbknbTewDYf8F&ipAddress=192.168.0.102`,{
-    headers : {
-      "apiKey" : "at_rtamG2Krj8ByKrI1xbknbTewDYf8F"
-    }
-   });
-  const json = await res.json();
-
-  alert(JSON.stringify(json));
-  
-  
- }catch(err){
    console.log(err);
   }
  }
