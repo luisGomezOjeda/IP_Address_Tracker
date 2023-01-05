@@ -8,7 +8,8 @@
  background-color: color("while");
  
  @include media-down("xxl"){
-  min-width: map-get($map: $breakpoin, $key: "ms");
+  // min-width: map-get($map: $breakpoin, $key: "ms");
+  min-width: 850px;
   margin-top: 50px;
  }
  
